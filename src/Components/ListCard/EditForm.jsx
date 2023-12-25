@@ -20,7 +20,9 @@ export default function () {
 
   const onSubmit = (data) => {
     axios
-      .put(`http://localhost:5000/toDoLists/${id.id}`, { ...data })
+      .put(`https://my-drag-drop-server.vercel.app/toDoLists/${id.id}`, {
+        ...data,
+      })
       .then((response) => {
         Swal.fire({
           position: "top-end",

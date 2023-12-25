@@ -33,7 +33,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/toDoLists/${params.id}`),
+          fetch(
+            `https://my-drag-drop-server.vercel.app/toDoLists/${params.id}`
+          ),
       },
       { path: "signIn", element: <SignIn /> },
       { path: "signUp", element: <SignUp /> },

@@ -13,7 +13,9 @@ export default function () {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/toDoLists?email=${user?.email}`)
+      .get(
+        `https://my-drag-drop-server.vercel.app/toDoLists?email=${user?.email}`
+      )
       .then((response) => {
         setToDoLists(response.data);
         setListLoading(false);

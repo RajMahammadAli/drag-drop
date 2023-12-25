@@ -33,7 +33,7 @@ export default function ({ item, toDoLists, setToDoLists, provided }) {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:5000/toDoLists/${id}`)
+          .delete(`https://my-drag-drop-server.vercel.app/toDoLists/${id}`)
           .then((response) => {
             console.log(response.data);
             if (response.data.deletedCount > 0) {

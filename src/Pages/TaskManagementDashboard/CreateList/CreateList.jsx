@@ -14,7 +14,7 @@ export default function ({ setListLoading }) {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/toDoLists", {
+      .post("https://my-drag-drop-server.vercel.app/toDoLists", {
         ...data,
         email: user.email,
         status: "todo",
