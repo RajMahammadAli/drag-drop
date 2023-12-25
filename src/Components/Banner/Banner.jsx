@@ -16,9 +16,10 @@ export default function () {
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
               <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Effortlessly manage your tasks with our intuitive to-do list
+                app. Streamline your day, prioritize your goals, and stay
+                organized with ease. Experience the convenience of Provident,
+                where productivity meets simplicity. Your tasks, your way.
               </p>
               <Link to="/taskManageDashBoard" className="btn btn-primary">
                 Let's Explore
